@@ -14,6 +14,7 @@ async def echo_send(message:types.Message):
         await message.delete()
     else:
         await bot.send_message(message.from_user.id, 'Позвать админа?')
+        # комментарий для комментария
 
 # регистрируем хендлеры
 def register_handlers_other (dp: Dispatcher):
